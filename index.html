@@ -1,0 +1,33 @@
+<html>
+  <body>
+    <style>
+      /* Bagian untuk memunculkan background foto*/
+      body{background-image: url("https://images.freecreatives.com/wp-content/uploads/2015/11/Beautiful-Merry-Christmas-HD-Wallpapers.jpg");
+      background-repeat:initial;background-size: 10% 10% 10%;background-position: center;transition:all .3s ease;}
+    </style> 
+
+    
+    <div id="bodyblur">
+    <center>
+    <h1 style="color: rgb(219, 238, 9);">MERRY CHRISTMAS & HAPPY NEW YEAR! </h1>
+    <img src="https://media.tenor.com/jDlsf-k-FooAAAAi/kawaii-loveletter.gif/" size="4">
+    <h1 style="color: white;">Mau baca ucapan Natal spesial dariku?</h1>
+    <button id="btn_mau" onclick="window.open('others.html')" style="position:left"><strong><font size="6">Mau Baca Dong</font></strong></button>&nbsp;
+    <button id="btn_gamau" onclick="gamau(this)" style="position: absolute"><strong><font size="6">Nggak Mau. Males!</font></strong></button>
+    </center>
+    </div>
+  </body>
+
+  
+  <script>
+    /*--Javascript untuk membuat animasi tombol "Nggak Mau. Males !" agar dapat bergerak*/
+    function gamau(id) {
+      var mau = document.getElementById("btn_mau");
+      var i = Math.floor(Math.random() * 320) + 1;
+      var j = Math.floor(Math.random() * 120) + mau.offsetTop;
+      id.style.left = i + "px";
+      id.style.top = j + "px";
+    }
+  </script>
+  
+</html>
